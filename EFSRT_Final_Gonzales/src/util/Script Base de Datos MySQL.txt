@@ -1,0 +1,31 @@
+create database efsrt_gonzales_bruno;
+/**/
+use efsrt_gonzales_bruno;
+/**/
+create table empleado(
+idEmpleado int auto_increment primary key,
+nombres varchar(100),
+apellidos varchar(100),
+dni char(8) not null,
+pais varchar(100),
+correo varchar(100),
+fechaNacimiento date,
+fechaRegistro datetime);
+/**/
+create table proveedor(
+idProveedor int auto_increment primary key,
+nombres varchar(100),
+apellidos varchar(100),
+dni char(8),
+direccion varchar(200),
+telefono char(9),
+correo varchar(100),
+pais varchar(100),
+fechaRegistro datetime);
+/**/
+create table producto(
+idProducto int auto_increment primary key,
+nombres varchar(100),
+fechaRegistro datetime,
+stock int,
+pais varchar(100));
